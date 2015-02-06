@@ -94,7 +94,7 @@ module Ckeditor
   end
 
   def self.base_path
-    @base_path ||= (asset_path || File.join([Rails.application.config.assets.prefix, '/ckeditor/']))
+    @base_path ||= (asset_path || File.join([::Rails.application.config.assets.prefix, '/ckeditor/']))
   end
 
   # All css and js files from ckeditor folder
